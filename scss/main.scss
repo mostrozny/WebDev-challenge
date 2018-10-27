@@ -28,16 +28,33 @@ body {
 
 .menu {
   width: 100vw;
- ul {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   li {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    li {
       width: 33.333%;
       display: flex;
-     justify-content: center;
-   }
- }
+      justify-content: center;
+      a {
+        border: none;
+        background: #404040;
+        color: #ffffff;
+        font-weight: 100;
+        padding: 20px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        display: inline-block;
+        &.active {
+
+        }
+        &.disabled {
+
+        }
+      }
+    }
+  }
 }
 
 
